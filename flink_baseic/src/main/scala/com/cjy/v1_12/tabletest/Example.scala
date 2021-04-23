@@ -1,4 +1,4 @@
-package com.cjy.tabletest
+package com.cjy.v1_12.tabletest
 
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.table.api.bridge.scala.StreamTableEnvironment
@@ -36,6 +36,8 @@ object Example {
     dataTable.select('td, 'tf)
 
     // 调用tableapi转换
+
+    // 1.12已经过时
     /* dataTable.select("$device_id,project")
        .filter("project= 'default' ")
       */
@@ -51,6 +53,7 @@ object Example {
 
     resTable.getQueryOperation
     resTable.execute().print()
+
     resultSqlTable.execute().print()
     resultSqlTable.printSchema()
 

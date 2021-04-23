@@ -1,8 +1,7 @@
-package com.cjy.apitest.sinktest
+package com.cjy.v1_11.apitest.sinktest
 
-import com.cjy.apitest.Sensor
+import com.cjy.v1_11.apitest.Sensor
 import org.apache.flink.api.common.serialization.SimpleStringEncoder
-import org.apache.flink.calcite.shaded.com.fasterxml.jackson.databind.JsonNode
 import org.apache.flink.core.fs.Path
 import org.apache.flink.streaming.api.functions.sink.filesystem.StreamingFileSink
 import org.apache.flink.streaming.api.scala._

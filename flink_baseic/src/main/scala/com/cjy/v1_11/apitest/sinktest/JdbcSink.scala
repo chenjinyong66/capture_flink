@@ -1,10 +1,9 @@
-package com.cjy.apitest.sinktest
+package com.cjy.v1_11.apitest.sinktest
 
-import java.sql.{Connection, Driver, DriverManager, PreparedStatement}
+import java.sql.{Connection, DriverManager, PreparedStatement}
 import java.util.Properties
 
-import com.cjy.apitest.Sensor
-import org.apache.flink.api.common.functions.{IterationRuntimeContext, RuntimeContext}
+import com.cjy.v1_11.apitest.Sensor
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.configuration.Configuration
 import org.apache.flink.streaming.api.functions.sink.{RichSinkFunction, SinkFunction}

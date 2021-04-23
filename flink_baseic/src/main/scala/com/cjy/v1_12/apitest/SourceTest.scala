@@ -1,4 +1,4 @@
-package com.cjy.apitest
+package com.cjy.v1_12.apitest
 
 import java.util.{Properties, Random}
 
@@ -37,16 +37,17 @@ object SourceTest {
 
     // 3、从kafka中读取
     val props = new Properties()
-    props.setProperty("bootstrap.servers", "localhost:9092")
+    props.setProperty("bootstrap.servers", "master:9092")
     props.setProperty("group.id", "sensor")
 
     val inputStream2 = env.addSource(new FlinkKafkaConsumer011[String]("test", new SimpleStringSchema(), props))
     inputStream2.print()
+
     inputStream.map(x => {
       val arr = x.split(",")
       Sensor(arr(0), arr(1), arr(2), arr(3), arr(4).toBoolean, arr(5))
     })
-      .print()
+    //      .print()
 
     // 3、自定义source
     val inputStream4 = env.addSource(new MyUDFSource())

@@ -1,4 +1,4 @@
-package com.cjy.wc
+package com.cjy.v1_11.wc
 
 import org.apache.flink.api.java.utils.ParameterTool
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment

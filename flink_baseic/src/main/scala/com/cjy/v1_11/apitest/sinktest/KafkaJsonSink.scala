@@ -1,4 +1,4 @@
-package com.cjy.apitest.sinktest
+package com.cjy.v1_11.apitest.sinktest
 
 import java.util.Properties
 
@@ -10,7 +10,7 @@ import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer011
 import org.apache.flink.streaming.util.serialization.JSONKeyValueDeserializationSchema
 
 /**
- * flink json 
+ * flink operator json
  *
  * @author chenjinyong
  * @create 2020-04-07
@@ -63,3 +63,4 @@ object KafkaJsonSink {
   }
 
 }
+

@@ -1,4 +1,4 @@
-package com.cjy.apitest
+package com.cjy.v1_12.apitest
 
 import org.apache.flink.api.common.eventtime.{WatermarkGenerator, WatermarkGeneratorSupplier, WatermarkOutput, WatermarkStrategy}
 import org.apache.flink.streaming.api.scala._

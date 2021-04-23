@@ -1,4 +1,4 @@
-package com.cjy.wc
+package com.cjy.v1_11.wc
 
 import org.apache.flink.api.scala.ExecutionEnvironment
 import org.apache.flink.api.scala._

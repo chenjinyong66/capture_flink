@@ -1,8 +1,8 @@
-package com.cjy.apitest.sinktest
+package com.cjy.v1_11.apitest.sinktest
 
 import java.util.Properties
 
-import com.cjy.apitest.Sensor
+import com.cjy.v1_11.apitest.Sensor
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.connectors.kafka.{FlinkKafkaConsumer011, FlinkKafkaProducer011}

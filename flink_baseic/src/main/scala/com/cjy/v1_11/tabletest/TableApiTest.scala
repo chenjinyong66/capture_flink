@@ -1,4 +1,4 @@
-package com.cjy.tabletest
+package com.cjy.v1_11.tabletest
 
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.table.api._
